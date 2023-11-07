@@ -3,53 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyFirstWebPage</title>
+    <link rel="stylesheet" href="app/styles.css">
+        <script src="https://kit.fontawesome.com/37e6a3e83b.js" crossorigin="anonymous">
+    </script>
+         <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous">
+    </script>
 </head>
 <body>
+    
     <header>
         <div class="logo-container">
-            <img src="" alt="log">
+            <a href="index.html"><i class="fa-solid fa-pen-nib"></i></a>
         </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-<section>
-    <div class="main-info">
+<section class="seccion-info">
+    <div class="info">
         <h1>About me</h1>
-        <h3>Welcome to my first page</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Sapiente repellat eum quo delectus maxime doloremque quidem modi aspernatur laudantium ad?</p>
-        <p>I want to learn web programming</p>
+            <h3>Welcome to my first page</h3>
+                <p>Hola, me llamo Linda y soy egresada de la Universidad Piloto de Colombia profesional en diseño gráfico
+                y con énfasis en editorial, diagramación y diseño de información. Creación de piezas gráficas
+                y apoyo en estratégias de comunicación a partir de la investigación. Dominio de programas
+                de Adobe; como InDesign, Illustrator, Photoshop y AfterEffects.
+                <strong>¡Estoy aprendiendo programación web!</strong></p>
     </div>
-    <div>
-        <img src="" alt="profile-img">
-    </div>
+        <div class="img-1">
+            <img src="Imágenes/Foto_LindaSarmiento.JPG" alt="profile-img">
+        </div>
 </section>
-<section class="cards">
+
+<section class="seccion-cards">
     <div class="card">
-        <div>
-            <img src="" alt="producto 1">
+        <div class="card-img">
+            <img src="Imágenes/Mockup_Saber al Detalle_Portada_Fondo.jpg" alt="producto 1">
         </div>
-        <h2>Saber al detalle</h2>
-        <p></p>
-        <a href="">conoce más</a>
+        <h2>Saber al Detalle</h2>
+        <p>Portada de un producto editorial diagramado a doble columna. Autoria del Instituto Colombiano para la Evaluación de la Educación - Icfes</p>
+        <a href="">¡Conoce más!</a>
     </div>
-      <div class="card">
-        <div>
-            <img src="" alt="producto 1">
+      
+    <div class="card">
+        <div class="card-img">
+            <img src="Imágenes/Mockup_Saber en Breve_Contenido_Fondo.jpg" alt="producto 2">
         </div>
-        <h2>Saber al detalle</h2>
-        <p></p>
-        <a href="">conoce más</a>
+        <h2>Saber en Breve</h2>
+        <p>Páginas internas de un producto editorial diagramado a doble columna acompañado de gráficas. Autoria del Instituto Colombiano para la Evaluación de la Educación - Icfes</p>
+        <a href="">¡Conoce más!</a>
     </div>
-    
 </section>
-    </main>
-    <footer></footer>
+</main>
+
+<footer class="form-header">
+    <h1>Contacto Freelance</h1>
+    <p><em>¡Escribeme!</em></p>
+  
+    <form action="" method="get" class="formulario">
+        <div class="form-row">
+            <label for="nombre">Nombres y apellidos</label>
+            <input id="nombre" name="nombre" type="text" />
+            </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="pepe@gmail.com"
+            />
+        </div>
+
+        <div class="form-row">
+            <label for="mensaje">Describe tu mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+
+        <div class="form-row">
+            <button>Enviar y contactar</button>
+            </div>
+        </form>
+</footer>
+
+<footer class="Social">
+    <h2>Social networks</h2>
+    <p>
+        Behance
+        Instagram
+        Linkedin
+    </p>
+</footer>
+
+<footer>
+    <a href="https://egg.live/es-co/"><i class="fa-solid fa-pen-nib"></i></a>
+</footer>
+<script src="app/index.js"></script>
 </body>
 </html>
