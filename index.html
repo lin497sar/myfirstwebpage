@@ -17,7 +17,7 @@
         <div class="logo-container">
             <a href="index.html"><i class="fa-solid fa-pen-nib"></i></a>
         </div>
-            <ul>
+            <ul class="menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Portafolio</a></li>
@@ -26,25 +26,25 @@
     </header>
 
     <main>
-<section class="seccion-info">
-    <div class="info">
-        <h1>About me</h1>
-            <h3>Welcome to my first page</h3>
+<section class="section-info">
+    <div class="basic-info">
+        <h1>Acerca de mi</h1>
+            <h2>¡Bienvenido!</h2>
                 <p>Hola, me llamo Linda y soy egresada de la Universidad Piloto de Colombia profesional en diseño gráfico
                 y con énfasis en editorial, diagramación y diseño de información. Creación de piezas gráficas
                 y apoyo en estratégias de comunicación a partir de la investigación. Dominio de programas
-                de Adobe; como InDesign, Illustrator, Photoshop y AfterEffects.
+                de Adobe; como InDesign, Illustrator, Photoshop y AfterEffects. <br> <br>
                 <strong>¡Estoy aprendiendo programación web!</strong></p>
     </div>
-        <div class="img-1">
-            <img src="img/linda.jpeg" alt="profile-img">
-        </div>
+    <div class="profile-img">
+        <img src="img/linda.jpeg" alt="profile-img">
+    </div>
 </section>
-<section class="seccion-cards">
+<section class="section-cards">
     <h1>Proyectos</h1>
     <div class="cards">
         <div class="card">
-            <div class="card-img">
+            <div class="card-img-container">
                 <img src="img/product1.jpeg" alt="producto 1">
             </div>
             <h2>Saber al Detalle</h2>
@@ -64,15 +64,15 @@
 </section>
 </main>
 
-<footer class="form-header">
+<div class="form-contact">
     <h1>Contacto Freelance</h1>
     <p><em>¡Escribeme!</em></p>
   
-    <form action="" method="get" class="formulario">
+    <form action="" method="get">
         <div class="form-row">
             <label for="nombre">Nombres y apellidos</label>
             <input id="nombre" name="nombre" type="text" />
-            </div>
+        </div>
 
         <div class="form-row">
             <label for="email">Email</label>
@@ -80,7 +80,7 @@
                 id="email"
                 name="email"
                 type="email"
-                placeholder="pepe@gmail.com"
+                placeholder="mail@mail.com"
             />
         </div>
 
@@ -93,9 +93,9 @@
             <button>Enviar y contactar</button>
             </div>
         </form>
-</footer>
+</div>
 
-<footer class="Social">
+<footer class="social">
     <h2>Social networks</h2>
     <p>
         Behance
@@ -104,9 +104,9 @@
     </p>
 </footer>
 
-<footer>
-    <a href="https://egg.live/es-co/"><i class="fa-solid fa-pen-nib"></i></a>
-</footer>
+<div class="float-btn">
+    <a href=""><i class="fa-solid fa-pen-nib"></i></a>
+</div>
 <script src="app/index.js"></script>
 </body>
 </html>
