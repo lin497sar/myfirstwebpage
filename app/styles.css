@@ -1,11 +1,26 @@
 *{
-    box-sizing: border-box;
-    margin: 0%;
-    border: 0%;
+    box-sizing:border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 body, main {
     width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(9, 38, 83);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    border: 1.5px;
+    width: 100%;
+    padding-inline: 3rem;
+    padding-block: 1rem;
 }
 header ul{
     list-style: none;
@@ -20,51 +35,51 @@ header a i{
     font-size: 20px;
 }
 
-header{
-    background-color: rgb(9, 38, 83);
+
+
+header ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    border: 1.5px;
-    border-radius: 8px;
 }
 
-nav ul{
-    display: flex;
-    gap: 1em;
+header ul li {
+    padding-inline: 2rem;
 }
 
-header nav ul li a{
+header ul li a{
     color: white;
 }
 
 .seccion-info{
+    width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: rgb(6, 42, 96);
     background-color: rgb(250, 250, 250);
     font-family: Montserrat;
-    padding: 5px;
     border: 1.5px solid rgb(40, 130, 171);
     font-size: 12px;
     line-height: 1rem;
     justify-content: center;
     border-radius: 8px;
+    padding-inline: 2rem;
+    margin-top: 3rem;
+   margin-inline: 3rem;
+    align-items: center;
 }
 
 .info h1{
     color: rgb(64, 173, 224);
     font-family: Georgia;
     font-size: 40px;
+    padding-bottom: 1rem;
 }
 
 .info h3{
     color: rgb(64, 173, 224);
     font-family: Glory;
     font-size: 22px;
-    padding-left: 20px;
+    padding-block: 1rem;
     line-height: 0.3rem;
 }
 
@@ -75,13 +90,7 @@ header nav ul li a{
     line-height: 25px;
     font-weight: 400;
     text-align: justify left;
-}
-
-.seccion-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding-right: 1rem;
 }
 
 .img-1{
@@ -89,34 +98,42 @@ header nav ul li a{
     height: 212px;
     display: flex;
     justify-content: center;
+    margin-block: 2rem;
 }
+
 
 .seccion-cards{
+    margin-top: 4rem;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin-inline: 6rem;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    padding-inline: 4rem;
+    align-items: center;
 }
 
+.cards {
+    display: flex;
+    margin-block: 2rem;
+    justify-content: space-between;
+}
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     width: 40%;
-    height: 80%;
-    border-radius: inherit;
-    object-position: center;
-    border-radius: 10px;
+    height: 80%;    
 }
 
-.card-img {
+/* .card-img {
     width: 100%;
-}
+} */
 
 .card-img img {
-width: 100%;
+width: 50%;
+height: 80%;
+ border-radius: 10px;
 
 }
 
@@ -133,7 +150,7 @@ width: 100%;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    text-align: justify left;
+    /* text-align: justify left; */
 }
 
 .card a{
@@ -142,7 +159,7 @@ width: 100%;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    text-align: justify left;
+    /* text-align: justify left; */
 }
 
 footer{
@@ -150,7 +167,6 @@ footer{
     background-color: rgb(40, 130, 171);
     font-family: Montserrat;
     padding: 22px;
-    margin: 50px;
     border: 1.5px;
     font-size: 13px;
     line-height: 150%; 
@@ -255,6 +271,8 @@ footer {
       margin-top: 7px;
       padding-right: 20px;
     }
+
+   
   }
 
   .form-row textarea {
@@ -316,3 +334,11 @@ footer {
       .form-row button {
           margin-left: 120px;
       }
+
+      @media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
